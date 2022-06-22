@@ -1,51 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6971b052-ee52-44c3-ad5a-52d385d3483e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shahmati.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/black-bishop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/black-king.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/black-knight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/black-pawn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/black-queen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/black-rook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/white-bishop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/white-king.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/white-knight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/white-pawn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/white-queen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/white-rook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BoardComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CellComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Board.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Cell.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Colors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Player.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/figure/Bishop.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/figure/Figure.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/figure/King.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/figure/Knight.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/figure/Pawn.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/figure/Queen.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/figure/Rook.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reportWebVitals.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="6971b052-ee52-44c3-ad5a-52d385d3483e" name="Changes" comment="#board+highLight">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BoardComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoardComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Board.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Board.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Cell.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Cell.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Player.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Player.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/figure/Bishop.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/figure/Bishop.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/figure/Figure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/figure/Figure.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/figure/King.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/figure/King.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/figure/Knight.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/figure/Knight.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/figure/Pawn.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/figure/Pawn.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/figure/Queen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/figure/Queen.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/figure/Rook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/figure/Rook.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,19 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\learning\\shahmati\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\learning\\shahmati\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -86,7 +58,11 @@
       <option name="presentableId" value="Default" />
       <updated>1655490731367</updated>
       <workItem from="1655490733932" duration="760000" />
-      <workItem from="1655555900386" duration="8264000" />
+      <workItem from="1655555900386" duration="8869000" />
+      <workItem from="1655674301840" duration="1306000" />
+      <workItem from="1655830679601" duration="4508000" />
+      <workItem from="1655917594514" duration="4329000" />
+      <workItem from="1655925578846" duration="3374000" />
     </task>
     <servers />
   </component>

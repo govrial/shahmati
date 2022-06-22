@@ -6,9 +6,12 @@ import {King} from "./figure/King";
 import {Bishop} from "./figure/Bishop";
 import {Queen} from "./figure/Queen";
 import {Rook} from "./figure/Rook";
+import {Figure} from "./figure/Figure";
 
 export class Board {
-  cells: Cell[][] = []
+  cells: Cell[][] = [];
+  lostWhiteFigures: Figure[] = [];
+  lostBlackFigures: Figure[] = [];
 
 
   public initCells() {
@@ -29,9 +32,22 @@ export class Board {
     return this.cells[y][x];
   }
 
+  public getCopyBoard(): Board {
+    const newBoard = new Board();
+    newBoard.cells = this.cells;
+    newBoard.lostBlackFigures = this.lostBlackFigures;
+    newBoard.lostWhiteFigures = this.lostWhiteFigures;
+    return newBoard;
+
+  }
+
   public hlCells(selected: Cell | null) {
     for (let i = 0; i < this.cells.length; i++) {
       const row = this.cells[i];
+      for (let j = 0; j < row.length; j++) {
+        const target = row[j];
+        target.available = !!selected?.figure?.canMove(target);
+      }
     }
   }
 
